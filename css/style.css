@@ -532,3 +532,6 @@ figure.highlight .section {
 .gist .file {
   all: initial;
 }
+.level .button {
+  background-color: #f86bc1;
+}
