@@ -7,22 +7,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>前端面试题汇总 - icrosの小窝</title>
+<title>Markdown基本语法 - icrosの小窝</title>
 
 
-    <meta name="description" content="汇集了各个大佬的成果～(￣▽￣～)~">
+    <meta name="description" content="初学markdown时踩过的坑…">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端面试题汇总">
-<meta property="og:url" content="https://hanabiicros.github.io/2020/03/27/interview/index.html">
+<meta property="og:title" content="Markdown基本语法">
+<meta property="og:url" content="https://hanabiicros.github.io/2020/03/28/post/index.html">
 <meta property="og:site_name" content="icrosの小窝">
-<meta property="og:description" content="汇集了各个大佬的成果～(￣▽￣～)~">
+<meta property="og:description" content="初学markdown时踩过的坑…">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://hanabiicros.github.io/images/wc11.jpg">
-<meta property="article:published_time" content="2020-03-27T02:31:23.000Z">
-<meta property="article:modified_time" content="2020-03-27T10:29:44.168Z">
+<meta property="og:image" content="https://hanabiicros.github.io/images/wc03.jpg">
+<meta property="article:published_time" content="2020-03-28T13:21:11.000Z">
+<meta property="article:modified_time" content="2020-03-28T14:43:47.942Z">
 <meta property="article:author" content="Yaobin Zhang">
+<meta property="article:tag" content="Markdown">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://hanabiicros.github.io/images/wc11.jpg">
+<meta name="twitter:image" content="https://hanabiicros.github.io/images/wc03.jpg">
 
 
 
@@ -80,7 +81,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.jpg" alt="前端面试题汇总" height="28">
+                <img src="/images/logo.jpg" alt="Markdown基本语法" height="28">
             
             </a>
         </div>
@@ -108,6 +109,10 @@
             <div class="navbar-end">
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -126,7 +131,7 @@
     
     <div class="card-image">
         <span  class="image is-7by1">
-            <img class="thumbnail" src="/images/wc11.jpg" alt="前端面试题汇总">
+            <img class="thumbnail" src="/images/wc03.jpg" alt="Markdown基本语法">
         </span>
     </div>
     
@@ -134,17 +139,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-27T02:31:23.000Z">2020-03-27</time>
+                <time class="level-item has-text-grey" datetime="2020-03-28T13:21:11.000Z">2020-03-28</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a>
+                <a class="has-link-grey -link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 16 个字)
+                    3 分钟 读完 (大约 469 个字)
                 </span>
                 
                 
@@ -158,13 +163,37 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                前端面试题汇总
+                Markdown基本语法
             
         </h1>
         <div class="content">
-            <p>汇集了各个大佬的成果～(￣▽￣～)~</p>
+            <p>初学markdown时踩过的坑…</p>
 <a id="more"></a>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h3><p>　　不得不承认，在写这篇文章前，我对markdown的使用仅仅停留在如何显示标题、链接、图片以及如何加代码块。<br>　　一开始我以为这点就够了，不过当我编辑<strong>关于</strong>页面时，我ku了。由于网上教程有些坑，加之官网的描述不甚详细，因此我决定结合我的亲身试验，对其进行总结<br><br></p>
+<h3 id="Markdown介绍"><a href="#Markdown介绍" class="headerlink" title="Markdown介绍"></a><strong>Markdown介绍</strong></h3><p>　　Markdown 是一种<strong>轻量级标记语言</strong>，它允许人们使用易读易写的纯文本格式编写文档。Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。当前许多网站都广泛使用 Markdown 来撰写帮助文档或是用于论坛上发表消息。例如：GitHub、简书、reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge等。<strong>(ps:摘自菜鸟教程)<del>个人感觉菜鸟教程更新的不够及时</del></strong><br><br></p>
+<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a><strong>标题</strong></h3><p>　　标题有一级到六级之分，以’#’的数量区分。一个’#’是一级标题，两个’#’是二级标题，以此类推。不过这个说白了就是加粗、加大，html实现也挺容易的。</p>
+<p>eg:</p>
+<blockquote>
+<p># 一级标题  </p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>## 二级标题</p>
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></blockquote>
+<br>
 
+<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a><strong>字体</strong></h3><p>　　<strong>斜体</strong>：将文字用<strong>一个</strong>*号包起来<br>　　<strong>加粗</strong>：将文字用<strong>两个</strong>*号包起来<br>　　<strong>斜体＆加粗</strong>：将文字用<strong>三个</strong>*号包起来<br>　　<strong>删除线</strong>：将文字用<strong>两个~</strong>号包起来<br>　　不过你也可以选择用html标签代替<del>(那你还用啥子markdown喽)</del></p>
+<p>eg:</p>
+<blockquote>
+<p>*斜体*<br><em>斜体</em><br>**加粗**<br><strong>加粗</strong><br>***斜体&amp;粗体***<br><strong><em>斜体&amp;粗体</em></strong><br>~~删除线~~<br><del>删除线</del></p>
+</blockquote>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Markdown/" rel="tag">Markdown</a>
+                </div>
+            </div>
         </div>
         
         
@@ -179,17 +208,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/28/post/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Markdown基本语法</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/26/02-post/">
-                <span class="level-item">基于Hexo创建博客(进阶篇)</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/27/interview/">
+                <span class="level-item">前端面试题汇总</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -345,6 +367,42 @@
 </div>
     
         
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#前言">
+        <span class="has-mr-6">1.1.1</span>
+        <span>前言</span>
+        </a></li><li>
+        <a class="is-flex" href="#Markdown介绍">
+        <span class="has-mr-6">1.1.2</span>
+        <span>Markdown介绍</span>
+        </a></li><li>
+        <a class="is-flex" href="#标题">
+        <span class="has-mr-6">1.1.3</span>
+        <span>标题</span>
+        </a></li></ul></ul><li>
+        <a class="is-flex" href="#一级标题">
+        <span class="has-mr-6">2</span>
+        <span>一级标题</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#二级标题">
+        <span class="has-mr-6">2.1</span>
+        <span>二级标题</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#字体">
+        <span class="has-mr-6">2.1.1</span>
+        <span>字体</span>
+        </a></li></ul></li></ul></li></ul>
+            </div>
+        </div>
+    </div>
+
     
     
         <div class="column-right-shadow is-hidden-widescreen ">
@@ -363,11 +421,11 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.jpg" alt="前端面试题汇总" height="28">
+                    <img src="/images/logo.jpg" alt="Markdown基本语法" height="28">
                 
                 </a>
                 <p class="is-size-7">
-                &copy; 2020 张耀斌&nbsp;
+                &copy; 2020 Yaobin Zhang&nbsp;
                 Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
                         href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
                 

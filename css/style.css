@@ -532,6 +532,15 @@ figure.highlight .section {
 .gist .file {
   all: initial;
 }
-.level .button {
+.level .is-link {
   background-color: #f86bc1;
+}
+.level .is-link:hover {
+  background-color: #f86bc1;
+}
+a {
+  color: #f86bc1;
+}
+a:hover {
+  color: #f86bc1;
 }
