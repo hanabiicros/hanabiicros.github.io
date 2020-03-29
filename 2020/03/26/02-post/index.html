@@ -19,7 +19,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://hanabiicros.github.io/images/wc01.jpg">
 <meta property="article:published_time" content="2020-03-26T14:08:31.000Z">
-<meta property="article:modified_time" content="2020-03-28T13:34:33.606Z">
+<meta property="article:modified_time" content="2020-03-29T11:48:59.896Z">
 <meta property="article:author" content="Yaobin Zhang">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Blog">
@@ -150,7 +150,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    9 分钟 读完 (大约 1329 个字)
+                    9 分钟 读完 (大约 1351 个字)
                 </span>
                 
                 
@@ -170,36 +170,63 @@
         <div class="content">
             <p>这是对基础篇的补充，方便了解Hexo，并对其进行个性化配置</p>
 <a id="more"></a>
-<h2 id="Hexo基本配置"><a href="#Hexo基本配置" class="headerlink" title="Hexo基本配置"></a>Hexo基本配置</h2><h3 id="config-yml配置文件"><a href="#config-yml配置文件" class="headerlink" title="_config.yml配置文件"></a>_config.yml配置文件</h3><p>该文件中是整个’Hexo’框架的配置文件，下面对其部分参数信息进行描述.</p>
+<h2 id="Hexo基本配置"><a href="#Hexo基本配置" class="headerlink" title="Hexo基本配置"></a><strong>Hexo基本配置</strong></h2><h3 id="config-yml配置文件"><a href="#config-yml配置文件" class="headerlink" title="_config.yml配置文件"></a>_config.yml配置文件</h3><p>　　该文件中是整个’Hexo’框架的配置文件，下面对其部分参数信息进行描述.</p>
 <h4 id="Site"><a href="#Site" class="headerlink" title="Site"></a>Site</h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">icrosの小窝</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">''</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">'帅斌的博客'</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Yaobin</span> <span class="string">Zhang</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">''</span></span><br></pre></td></tr></table></figure>
-<p>其中<br>-‘title’：网站的标题<br>-‘subtitle’：网站的副标题<br>-‘description’：网站的描述，用于SEO<br>-‘keywords’：网站的关键词<br>-‘author’：网站的作者<br>-‘language’：网站所使用的语言，默认是en，你可以改为’zh-CN’简体中文<br>-‘timezone’：网站的时区，默认使用你电脑的时区</p>
+
+<pre><code>-&apos;title&apos;：网站的标题
+-&apos;subtitle&apos;：网站的副标题
+-&apos;description&apos;：网站的描述，用于SEO
+-&apos;keywords&apos;：网站的关键词
+-&apos;author&apos;：网站的作者
+-&apos;language&apos;：网站所使用的语言，默认是en，你可以改为&apos;zh-CN&apos;简体中文
+-&apos;timezone&apos;：网站的时区，默认使用你电脑的时区</code></pre><br>
+
 <h4 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://hanabiicros.github.io/</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span> </span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p>其中<br>-‘url’：网址，如果你的网站是放在子路径下，则将其设置为’<a href="http://yoursite.com/child&#39;">http://yoursite.com/child&#39;</a><br>-‘root’：网站的根目录<br>-‘permalink’：文章的永久链接格式，即发布的文章在网站下生成的路径格式，默认是’yoursite.com/year/month/day/title’<br>-‘pretty_urls’：改写permalink的值来美化URL<br>-‘pretty_urls.trailing_index’：是否在永久链接中保留尾部的index.html<br>-‘pretty_urls.trailing_html’：是否在永久链接中保留尾部的.html</p>
+
+<pre><code>-&apos;url&apos;：网址，如果你的网站是放在子路径下，则将其设置为&apos;http://yoursite.com/child&apos;
+-&apos;root&apos;：网站的根目录
+-&apos;permalink&apos;：文章的永久链接格式，即发布的文章在网站下生成的路径格式，默认是&apos;yoursite.com/year/month/day/title&apos;
+-&apos;pretty_urls&apos;：改写permalink的值来美化URL
+-&apos;pretty_urls.trailing_index&apos;：是否在永久链接中保留尾部的index.html
+-&apos;pretty_urls.trailing_html&apos;：是否在永久链接中保留尾部的.html</code></pre><br>
+
 <h4 id="Directory"><a href="#Directory" class="headerlink" title="Directory"></a>Directory</h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">source_dir:</span> <span class="string">source</span></span><br><span class="line"><span class="attr">public_dir:</span> <span class="string">public</span></span><br><span class="line"><span class="attr">tag_dir:</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">archive_dir:</span> <span class="string">archives</span></span><br><span class="line"><span class="attr">category_dir:</span> <span class="string">categories</span></span><br><span class="line"><span class="attr">code_dir:</span> <span class="string">downloads/code</span></span><br><span class="line"><span class="attr">i18n_dir:</span> <span class="string">:lang</span></span><br><span class="line"><span class="attr">skip_render:</span></span><br></pre></td></tr></table></figure>
-<p>主要配置了各个文件夹的存放位置，另外’skip_render’表示跳过指定文件的渲染，即你可以使用自己的样式，一般默认即可。</p>
+<p>　　主要配置了各个文件夹的存放位置，另外’skip_render’表示跳过指定文件的渲染，即你可以使用自己的样式，一般默认即可。<br><br></p>
 <h4 id="home-page-setting"><a href="#home-page-setting" class="headerlink" title="home page setting"></a>home page setting</h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">''</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br></pre></td></tr></table></figure>
-<p>其中<br>-‘index_generator.path’：指明博客主页的根路径<br>-‘index_generator.per_page’：每页显示的最多文章数<br>-‘index_generator.order_by’：文章的排序方式</p>
+
+<pre><code>-&apos;index_generator.path&apos;：指明博客主页的根路径
+-&apos;index_generator.per_page&apos;：每页显示的最多文章数
+-&apos;index_generator.order_by&apos;：文章的排序方式</code></pre><br>
+
 <h4 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">icarus</span></span><br></pre></td></tr></table></figure>
-<p>-‘theme’：当前主题名称<br>-‘theme_config’：主题的配置文件，会覆盖主题目录下的’_config.yml’中的配置<br>-‘deploy’：部署部分的设置</p>
-<p>其他配置默认即可，详细信息可见<a href="https://hexo.io/zh-cn/docs">官方文档</a></p>
-<h2 id="Hexo基本操作"><a href="#Hexo基本操作" class="headerlink" title="Hexo基本操作"></a>Hexo基本操作</h2><h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><p>‘基础篇’中讲了用如下命令，新建一篇文章</p>
+<pre><code>-&apos;theme&apos;：当前主题名称
+-&apos;theme_config&apos;：主题的配置文件，会覆盖主题目录下的&apos;_config.yml&apos;中的配置
+-&apos;deploy&apos;：部署部分的设置</code></pre><p>　　其他配置默认即可，详细信息可见<a href="https://hexo.io/zh-cn/docs">官方文档</a><br><br></p>
+<h2 id="Hexo基本操作"><a href="#Hexo基本操作" class="headerlink" title="Hexo基本操作"></a><strong>Hexo基本操作</strong></h2><h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><p>　　‘基础篇’中讲了用如下命令，新建一篇文章</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post <span class="string">'title'</span></span><br></pre></td></tr></table></figure>
-<p>除了新建文章外，还可以新建页面’page’或者草稿’draft’</p>
+<p>　　除了新建文章外，还可以新建页面’page’或者草稿’draft’</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="string">'title'</span></span><br><span class="line">hexo new draft <span class="string">'title'</span></span><br></pre></td></tr></table></figure>
-<p>其中新建的页面’page’的’title’，和你在导航栏中自定义的路径’/title’相匹配的。即点击导航栏的’title’按钮，会定位到这个页面中。(ps:当初看官方文档的时候看到了这里，不过没仔细看，结果在’关于’页面卡了好久，不知道怎么加这个页面。han(lll￢ω￢))</p>
-<h3 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h3><p>Front-matter是每个post中最上方以’—‘分割的区域，指定个别文件的变量</p>
+<p>　　其中新建的页面’page’的’title’，和你在导航栏中自定义的路径’/title’相匹配的。即点击导航栏的’title’按钮，会定位到这个页面中。<del>(ps:当初看官方文档的时候看到了这里，不过没仔细看，结果在’关于’页面卡了好久，不知道怎么加这个页面。han(lll￢ω￢))</del><br><br></p>
+<h3 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h3><p>　　Front-matter是每个post中最上方以’—‘分割的区域，指定个别文件的变量</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">基于Hexo创建博客(进阶篇)</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2020</span><span class="number">-03</span><span class="number">-26</span> <span class="number">22</span><span class="string">:08:31</span></span><br><span class="line"><span class="attr">thumbnail:</span> <span class="string">/images/wc01.jpg</span></span><br><span class="line"><span class="attr">toc:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">tags:</span>            <span class="comment">#标签</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">Blog</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">技术</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-<p>其中<br>-‘title’：标题<br>-‘date’：建立日期<br>-‘updated’：更新日期<br>-‘tags’：标签，网站会根据每篇文章的标签进行归类<br>-‘categories’：分类，同样网站会根据每篇文章所属分类进行归类<br>-‘comments’：开启文章的评论功能，不加默认开启<br>-‘permalink’：覆盖文章的网址<br>另外’thumbnail’和’toc’是’icarus’主题特有的。</p>
-<h3 id="资源插入"><a href="#资源插入" class="headerlink" title="资源插入"></a>资源插入</h3><h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><p>在Hexo 2之前，许多人是推荐安装’hexo-asset-image’，该插件貌似是解决了因常规的md语法和相对路径引用资源的方式造成在存档页和主页显示不正确的问题(ps:因为我是一上手就直接体验icarus主题，因而没遇到这个问题，况且我还是最新版的Hexo呢)</p>
+
+<pre><code>-&apos;title&apos;：标题
+-&apos;date&apos;：建立日期
+-&apos;updated&apos;：更新日期
+-&apos;tags&apos;：标签，网站会根据每篇文章的标签进行归类
+-&apos;categories&apos;：分类，同样网站会根据每篇文章所属分类进行归类
+-&apos;comments&apos;：开启文章的评论功能，不加默认开启
+-&apos;permalink&apos;：覆盖文章的网址</code></pre><p>　　另外’thumbnail’和’toc’是’icarus’主题特有的。<br><br></p>
+<h3 id="资源插入"><a href="#资源插入" class="headerlink" title="资源插入"></a>资源插入</h3><h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><p>　　在Hexo 2之前，许多人是推荐安装’hexo-asset-image’，该插件貌似是解决了因常规的md语法和相对路径引用资源的方式造成在存档页和主页显示不正确的问题<del>(ps:因为我是一上手就直接体验icarus主题，因而没遇到这个问题，况且我还是最新版的Hexo呢)</del></p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">https://github.com/CodeFalling/hexo-asset-image</span> <span class="string">--</span> <span class="string">save</span></span><br></pre></td></tr></table></figure>
-<p>然后在博客根目录下的’_config.yml’文件中将’post_asset_folder’属性设置为true，这样在每次创建新的文章时，他会自动在同目录下创建一个同名的文件夹，该文件夹用于存放与文章相关的资源。<br>接着用传统的md形式就能实现图片的插入</p>
+<p>　　然后在博客根目录下的’_config.yml’文件中将’post_asset_folder’属性设置为true，这样在每次创建新的文章时，他会自动在同目录下创建一个同名的文件夹，该文件夹用于存放与文章相关的资源。<br>　　接着用传统的md形式就能实现图片的插入</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">![title](xxx.jpg/png)</span></span><br></pre></td></tr></table></figure>
-<p>但是我在官方提供的插件库中，并未找到’hexo-asset-image’，只有’hexo-asset’，不过提供的功能大致是一样的。</p>
-<h4 id="标签插件"><a href="#标签插件" class="headerlink" title="标签插件"></a>标签插件</h4><p>除了上述方法，在Hexo 3中，官方提供了名为’标签插件’的东东</p>
+<p>　　但是我在官方提供的插件库中，并未找到’hexo-asset-image’，只有’hexo-asset’，不过提供的功能大致是一样的。<br><br></p>
+<h4 id="标签插件"><a href="#标签插件" class="headerlink" title="标签插件"></a>标签插件</h4><p>　　除了上述方法，在Hexo 3中，官方提供了名为’标签插件’的东东</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#123;%</span> <span class="string">asset_path</span> <span class="string">slug</span> <span class="string">%&#125;</span></span><br><span class="line"><span class="string">&#123;%</span> <span class="string">asset_img</span> <span class="string">slug</span> <span class="string">[title]</span> <span class="string">%&#125;</span></span><br><span class="line"><span class="string">&#123;%</span> <span class="string">asset_link</span> <span class="string">slug</span> <span class="string">[title]</span> <span class="string">%&#125;</span></span><br></pre></td></tr></table></figure>
-<p>像这样也可以实现路径、图片、链接的插入，当然这个功能是很强大的，官方提供了’引用块’、’代码块’、’Image’、’Youtube’等的插入方式。<br>对于码农而言，主要用到的还是代码块的插入。一般使用，只需指明使用的语言’lang:’即可，而且它默认显示行号。</p>
+<p>　　像这样也可以实现路径、图片、链接的插入，当然这个功能是很强大的，官方提供了’引用块’、’代码块’、’Image’、’Youtube’等的插入方式。<br>对于码农而言，主要用到的还是代码块的插入。一般使用，只需指明使用的语言’lang:’即可，而且它默认显示行号。</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#123;%</span> <span class="string">codeblock</span> <span class="string">[title]</span> <span class="string">[lang:language]</span> <span class="string">[url]</span> <span class="string">[link</span> <span class="string">text]</span> <span class="string">[additional</span> <span class="string">options]</span> <span class="string">%&#125;</span></span><br><span class="line"><span class="string">code</span> <span class="string">snippet</span></span><br><span class="line"><span class="string">&#123;%</span> <span class="string">endcodeblock</span> <span class="string">%&#125;</span></span><br></pre></td></tr></table></figure>
-<p>还有一种就是用反引号的形式(格式问题，不能换行只能放在一行，实际使用将代码和第二个反引号换行)</p>
+<p>　　还有一种就是用反引号的形式(格式问题，不能换行只能放在一行，实际使用将代码和第二个反引号换行)</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">``` [language] [title] [url] [link <span class="built_in">text</span>] code snippet```</span><br></pre></td></tr></table></figure>
 
 
@@ -671,5 +698,5 @@ document.addEventListener('DOMContentLoaded', function () {
 <link rel="stylesheet" href="/css/search.css">
 <link rel="stylesheet" href="/css/insight.css">
     
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</body>
 </html>

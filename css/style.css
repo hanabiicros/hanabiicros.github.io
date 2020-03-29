@@ -544,3 +544,14 @@ a {
 a:hover {
   color: #f86bc1;
 }
+a.has-link-black-ter:hover,
+.has-link-grey:hover {
+  color: #f86bc1 !important;
+}
+.navbar-start .navbar-item:hover,
+.navbar-start .is-active:hover {
+  color: #f86bc1;
+}
+.navbar-start .is-active {
+  color: #f86bc1 !important;
+}
