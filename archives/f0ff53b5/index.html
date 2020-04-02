@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 4.2.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>前端面试题汇总——HTML篇 - icrosの小窝</title>
+
+
+    <meta name="description" content="汇集了各个大佬的成果～(￣▽￣～)~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端面试题汇总——HTML篇">
+<meta property="og:url" content="https://hanabiicros.github.io/archives/f0ff53b5/index.html">
+<meta property="og:site_name" content="icrosの小窝">
+<meta property="og:description" content="汇集了各个大佬的成果～(￣▽￣～)~">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/hanabiicros/cdn/master/blog_files/img/PicGo-Github-PicBed/20200402174810.jpg">
+<meta property="article:published_time" content="2020-03-27T02:31:23.000Z">
+<meta property="article:modified_time" content="2020-04-02T09:55:11.539Z">
+<meta property="article:author" content="Yaobin Zhang">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="HTML">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/hanabiicros/cdn/master/blog_files/img/PicGo-Github-PicBed/20200402174810.jpg">
+
+
+
+
+
+<link rel="alternative" href="/atom.xml" title="前端面试题汇总——HTML篇" type="application/atom+xml">
+
+
+
+<link rel="icon" href="/images/favicon.png">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+    
+    
+    
+    
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+    
+    <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.jpg" alt="前端面试题汇总——HTML篇" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/">主页</a>
+                
+                <a class="navbar-item"
+                href="/archives">归档</a>
+                
+                <a class="navbar-item"
+                href="/categories">分类</a>
+                
+                <a class="navbar-item"
+                href="/tags">标签</a>
+                
+                <a class="navbar-item"
+                href="/about">关于</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-9-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-image">
+        <span  class="image is-7by1">
+            <img class="thumbnail" src="https://raw.githubusercontent.com/hanabiicros/cdn/master/blog_files/img/PicGo-Github-PicBed/20200402174810.jpg" alt="前端面试题汇总——HTML篇">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-27T02:31:23.000Z">2020-03-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    15 分钟 读完 (大约 2265 个字)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                前端面试题汇总——HTML篇
+            
+        </h1>
+        <div class="content">
+            <p>汇集了各个大佬的成果～(￣▽￣～)~</p>
+<a id="more"></a>
+
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h2><p>　　最近许多大厂都开启了暑期实习生招聘，看着大佬们一个个offer拿到手软，真想<del>扇自己两巴掌</del>。因此菜菜的我决定对面试题进行汇总，并且对自己的不足之处进行巩固，有备无患嘛。(主要来源：<a href="https://github.com/yisainan/web-interview/">https://github.com/yisainan/web-interview/</a>)</p>
+<h2 id="简述对HTML语义化的理解"><a href="#简述对HTML语义化的理解" class="headerlink" title="简述对HTML语义化的理解"></a><strong>简述对HTML语义化的理解</strong></h2><p>　　1. <strong>用正确的标签做正确的事情</strong><br>　　2. HTML语义化让页面的<strong>内容结构化，结构更清晰</strong>，便于对浏览器、搜索引擎解析；即使在没有样式CSS情况下也以一种文档格式显示，并且容易阅读<br>　　3. 搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，<strong>利于SEO</strong><br>　　4. 使阅读网页源码的人能更容易将网站分块，<strong>便于阅读、维护以及理解</strong><br><br></p>
+<h2 id="label标签作用以及使用方法"><a href="#label标签作用以及使用方法" class="headerlink" title="label标签作用以及使用方法"></a><strong>label标签作用以及使用方法</strong></h2><p>　　1. label标签用来定义表单控制间的关系，<strong>当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上</strong><br>　　2. 使用方法：<strong>一种是id绑定，一种是嵌套</strong><br>eg:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"Name"</span>&gt;</span>Number:<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"Name"</span> <span class="attr">id</span>=<span class="string">"Name"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">label</span>&gt;</span>Date:<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"B"</span>/&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<h2 id="iframe框架有哪些优缺点"><a href="#iframe框架有哪些优缺点" class="headerlink" title="iframe框架有哪些优缺点"></a><strong>iframe框架有哪些优缺点</strong></h2><p><strong>优点：</strong><br>　　1. iframe能够原封不动的把嵌入的网页展示出来<br>　　2. 如果有多个网页引用iframe，那么只需修改iframe的内容，就可以实现调用的每一个页面内容的更改，方便快捷<br>　　3. 网页如果为了统一风格，header和footer都一样的，就可以写成一个页面，用iframe来嵌套，可以增加代码的可重用性<br>　　4. 如果遇到加载缓慢的第三方内容如图标和广告，这些问题可以由iframe解决</p>
+<p><strong>缺点：</strong><br>　　1. 框架结构中出现各种滚动条<br>　　2. iframe会阻塞主页面的Onload事件，拖慢网页加载<br>　　3. 搜索引擎的检索程序无法解读这种页面，不利于SEO<br>　　4. iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载</p>
+<br>
+
+<h2 id="HTML与XHTML有什么区别，推荐哪个"><a href="#HTML与XHTML有什么区别，推荐哪个" class="headerlink" title="HTML与XHTML有什么区别，推荐哪个"></a><strong>HTML与XHTML有什么区别，推荐哪个</strong></h2><p>　　推荐使用XHTML，因为XHTML是XML重写了HTML的规范，比HTML更加严格，表现如下：<br>　　1. XHTML中所有的标签必须闭合<br>　　2. XHTML所有标签都必须使用小写<br>　　3. 所有的XML标记都必须合理嵌套<br>　　4. 所有的参数值都必须用引号””括起来<br>　　5. 把所有&lt;和&amp;特殊符号用编码表示<br>　　6. 给所有属性赋值<br>　　7. 不要在注释内容中使用”–”<br>　　8. 图片必须使用说明文字<br>　　ps:<del>HTML<strong>元素</strong>以开始标签起始，以结束标签终止</del><br><br></p>
+<h2 id="HTML5的form如何关闭自动填充功能"><a href="#HTML5的form如何关闭自动填充功能" class="headerlink" title="HTML5的form如何关闭自动填充功能"></a><strong>HTML5的form如何关闭自动填充功能</strong></h2><p>　　将不想要自动完成的form或input设置为<strong>autocomplete=off</strong><br><br></p>
+<h2 id="title与h1、b与strong、i与em的区别"><a href="#title与h1、b与strong、i与em的区别" class="headerlink" title="title与h1、b与strong、i与em的区别"></a><strong>title与h1、b与strong、i与em的区别</strong></h2><p>　　1. title用于网站信息标题，突出网站标题或关键字，一个网站可以有多个title，SEO权重高于h1；h1概括的是文章的主题，一个页面最好只用一个h1<br>　　2. b是为了加粗而加粗，strong是为了标明重点而加粗<br>　　3. i为了斜体而斜体，em为了标明重点而斜体，且对于搜索引擎来说strong和em比b和i重视的多<br><br></p>
+<h2 id="描述下SEO中的TDK"><a href="#描述下SEO中的TDK" class="headerlink" title="描述下SEO中的TDK"></a><strong>描述下SEO中的TDK</strong></h2><p>　　在SEO中，所谓的TDK就是title(标题标签)、description(描述标签)、keywords(关键词标签)这三个标签<br><br></p>
+<h2 id="HTML文件头中的DOCTYPE的作用"><a href="#HTML文件头中的DOCTYPE的作用" class="headerlink" title="HTML文件头中的DOCTYPE的作用"></a><strong>HTML文件头中的DOCTYPE的作用</strong></h2><p>　　1. 告知浏览器，文档使用的是哪种HTML或XHTML规范<br>　　2. 告诉浏览器按照何种规范(DTD)解析页面，若没有DOCTYPE声明，那么浏览器将按照自己的方式解析渲染页面<br><br></p>
+<h2 id="简述一下src和href区别"><a href="#简述一下src和href区别" class="headerlink" title="简述一下src和href区别"></a><strong>简述一下src和href区别</strong></h2><p>　　src用于引用资源，替换当前元素；href用于在当前文档和引用资源之间确立联系。<br>　　<strong>href:</strong><br>　　href标识超文本引用，用在link和a等标签上，是在当前元素和引用资源之间建立联系。若在文档中添加href，浏览器会识别该文档为CSS文件，就会并行下载资源并且不会停止对当前文档的处理。因此<strong>建议使用link方式加载CSS，而不是使用@import方式</strong><br>　　<strong>src:</strong><br>　　src表示引用资源，替换当前元素，用在img,script,iframe上。当浏览器解析到src，会暂停其他资源的下载和处理(图片不会)，直到将该资源加载、编译、执行完毕，类似于将所有资源引用到当前内容。因此<strong>建议把js脚本放在底部而不是头部</strong><br><br></p>
+<h2 id="严格模式与混杂模式"><a href="#严格模式与混杂模式" class="headerlink" title="严格模式与混杂模式"></a><strong>严格模式与混杂模式</strong></h2><p>　　严格模式：以浏览器支持的最高标准运行<br>　　混杂模式：页面以宽松向下兼容的方式显示，模拟老式浏览器的行为<br><br></p>
+<h2 id="对WEB标准以及W3C的理解"><a href="#对WEB标准以及W3C的理解" class="headerlink" title="对WEB标准以及W3C的理解"></a><strong>对WEB标准以及W3C的理解</strong></h2><p>　　WEB标准简单来说可以分为<strong>结构、表现和行为</strong>。其中结构主要由HTML标签组成。表现即指CSS样式表。行为指页面和用户具有一定的交互，同时页面结构或者表现发生变化，主要由js组成<br>　　WEB标准一般是将该三部分独立分开，使其更具有模块化。但一般产生行为时，就会有结构或者表现的变化，也使得这三者的界限并不那么清晰<br>　　W3C对WEB标准提出了规范化的要求，也就是在实际编程中的一些代码规范。包含如下几点：<br>　　1. 对于结构要求：<br>　　　　1. 标签字母要小写<br>　　　　2. 标签要闭合<br>　　　　3. 标签不允许随意嵌套<br>　　2. 对于CSS和js要求：<br>　　　　1. 尽量使用外联CSS样式表和js脚本。将结构、表现和行为分为三块。同时提高页面渲染速度，提高用户体验。<br>　　　　2. 样式尽量少用行间样式表，使结构和表现分离，标签的id和class等属性命名要做到见文知意，标签越少，加载越快，代码维护简单，便于改版<br>　　　　3. 不需要变动页面内容，便可提供打印版本而不需要复制内容<br><br></p>
+<h2 id="列举IE与其他浏览器不一样的特性"><a href="#列举IE与其他浏览器不一样的特性" class="headerlink" title="列举IE与其他浏览器不一样的特性"></a><strong>列举IE与其他浏览器不一样的特性</strong></h2><p>　　1. IE的排版引擎是Trident<br>　　2. Trident内核曾经几乎与W3C标准脱节<br>　　3. Trident内核的大量bug等安全性问题没有得到及时解决<br>　　4. js方面有很多独立的方法，例如绑定事件的attachEvent、创建事件的createEventObject等<br>　　5. CSS方面，也有自己独立的处理方式，例如设置透明，低版本IE中使用滤镜的方式<br><br></p>
+<h2 id="前端页面由哪三层构成，及作用"><a href="#前端页面由哪三层构成，及作用" class="headerlink" title="前端页面由哪三层构成，及作用"></a><strong>前端页面由哪三层构成，及作用</strong></h2><p>　　分别是结构层、表示层、行为层<br>　　<strong>结构层：</strong><br>　　由HTML或XHTML之类的标记语言负责创建。标签对网页内容的语义含义做出了描述，但这些标签不包含任何关于如何显示有关内容的信息。<br>　　<strong>表示层：</strong><br>　　由CSS负责创建，CSS对”如何显示有关内容”的问题做出了回答<br>　　<strong>行为层：</strong><br>　　负责回答”内容应该如何对事件做出反应”这一问题，这是javascript和DOM主宰的领域<br><br></p>
+<h2 id="网页验证码是干嘛的"><a href="#网页验证码是干嘛的" class="headerlink" title="网页验证码是干嘛的"></a><strong>网页验证码是干嘛的</strong></h2><p>　　1. 区分用户是计算机还是人的公共全自动程序。可以防止恶意破解密码、刷票、论坛灌水<br>　　2. 有效防止黑客对某一个特定注册用户用特定程序暴力破解方式进行不断的登录尝试<br><br></p>
+<h2 id="为什么用多个域名存储网站资源更有效"><a href="#为什么用多个域名存储网站资源更有效" class="headerlink" title="为什么用多个域名存储网站资源更有效"></a><strong>为什么用多个域名存储网站资源更有效</strong></h2><p>　　1. CDN缓存更方便 <del>CDN边缘节点缓存主要解决网络延迟问题</del><br>　　2. 突破浏览器并发限制<br>　　3. 节约cookie带宽<br>　　4. 节约主域名的连接数，优化页面响应速度<br>　　5. 防止不必要的安全问题</p>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/HTML/" rel="tag">HTML</a>, <a class="has-link-grey -link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/archives/5d36ff15/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Markdown基本语法</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/archives/413d9fe2/">
+                <span class="level-item">基于Hexo创建博客(进阶篇)</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: 'Cdhbx6IFRqfFOS0O0kgHlnlR-gzGzoHsz',
+        app_key: 'wWRKwNsuHPN0RBF9aYHymazF',
+        placeholder: '欢迎各位dalao评论'
+    });
+</script>
+
+    </div>
+</div>
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="is-rounded" src="/images/profile.jpg" alt="icros">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        icros
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        一个热衷于二次元的菜鸡程序员&gt;_&lt;
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>Guangzhou,China</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <a href="/archives">
+                        <p class="title has-text-weight-normal">
+                            4
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <a href="/categories">
+                        <p class="title has-text-weight-normal">
+                            2
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <a href="/tags">
+                        <p class="title has-text-weight-normal">
+                            6
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://github.com/hanabiicros" target="_blank" rel="noopener">
+                关注我</a>
+        </div>
+        
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Github" href="https://github.com/hanabiicros">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Facebook" href="https://facebook.com">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Twitter" href="https://twitter.com">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Dribbble" href="https://dribbble.com">
+                
+                <i class="fab fa-dribbble"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="RSS" href="/atom.xml">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+        
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#前言">
+        <span class="has-mr-6">1</span>
+        <span>前言</span>
+        </a></li><li>
+        <a class="is-flex" href="#简述对HTML语义化的理解">
+        <span class="has-mr-6">2</span>
+        <span>简述对HTML语义化的理解</span>
+        </a></li><li>
+        <a class="is-flex" href="#label标签作用以及使用方法">
+        <span class="has-mr-6">3</span>
+        <span>label标签作用以及使用方法</span>
+        </a></li><li>
+        <a class="is-flex" href="#iframe框架有哪些优缺点">
+        <span class="has-mr-6">4</span>
+        <span>iframe框架有哪些优缺点</span>
+        </a></li><li>
+        <a class="is-flex" href="#HTML与XHTML有什么区别，推荐哪个">
+        <span class="has-mr-6">5</span>
+        <span>HTML与XHTML有什么区别，推荐哪个</span>
+        </a></li><li>
+        <a class="is-flex" href="#HTML5的form如何关闭自动填充功能">
+        <span class="has-mr-6">6</span>
+        <span>HTML5的form如何关闭自动填充功能</span>
+        </a></li><li>
+        <a class="is-flex" href="#title与h1、b与strong、i与em的区别">
+        <span class="has-mr-6">7</span>
+        <span>title与h1、b与strong、i与em的区别</span>
+        </a></li><li>
+        <a class="is-flex" href="#描述下SEO中的TDK">
+        <span class="has-mr-6">8</span>
+        <span>描述下SEO中的TDK</span>
+        </a></li><li>
+        <a class="is-flex" href="#HTML文件头中的DOCTYPE的作用">
+        <span class="has-mr-6">9</span>
+        <span>HTML文件头中的DOCTYPE的作用</span>
+        </a></li><li>
+        <a class="is-flex" href="#简述一下src和href区别">
+        <span class="has-mr-6">10</span>
+        <span>简述一下src和href区别</span>
+        </a></li><li>
+        <a class="is-flex" href="#严格模式与混杂模式">
+        <span class="has-mr-6">11</span>
+        <span>严格模式与混杂模式</span>
+        </a></li><li>
+        <a class="is-flex" href="#对WEB标准以及W3C的理解">
+        <span class="has-mr-6">12</span>
+        <span>对WEB标准以及W3C的理解</span>
+        </a></li><li>
+        <a class="is-flex" href="#列举IE与其他浏览器不一样的特性">
+        <span class="has-mr-6">13</span>
+        <span>列举IE与其他浏览器不一样的特性</span>
+        </a></li><li>
+        <a class="is-flex" href="#前端页面由哪三层构成，及作用">
+        <span class="has-mr-6">14</span>
+        <span>前端页面由哪三层构成，及作用</span>
+        </a></li><li>
+        <a class="is-flex" href="#网页验证码是干嘛的">
+        <span class="has-mr-6">15</span>
+        <span>网页验证码是干嘛的</span>
+        </a></li><li>
+        <a class="is-flex" href="#为什么用多个域名存储网站资源更有效">
+        <span class="has-mr-6">16</span>
+        <span>为什么用多个域名存储网站资源更有效</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+        </div>
+    
+</div>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.jpg" alt="前端面试题汇总——HTML篇" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 张耀斌&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
+                
+                <br>
+                <span id="busuanzi_container_site_uv">
+                共<span id="busuanzi_value_site_uv">0</span>个访客
+                </span>
+                
+                </p>
+                <br>
+                <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+                <script>
+                    var now = new Date(); 
+                    function createtime() { 
+                        var grt= new Date("03/25/2020 20:43:00");//此处修改你的建站时间或者网站上线时间 
+                        now.setTime(now.getTime()+250); 
+                        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+                        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+                        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+                        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+                        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+                        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+                        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+                        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+                    } 
+                setInterval("createtime()",250);
+                </script>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+
+<script>
+var IcarusThemeSettings = {
+    site: {
+        url: 'https://hanabiicros.github.io',
+        external_link: {"enable":true,"exclude":[]}
+    },
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+
+
+<script src="/js/animation.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>
