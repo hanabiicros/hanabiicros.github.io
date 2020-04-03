@@ -17,15 +17,15 @@
 <meta property="og:site_name" content="icrosの小窝">
 <meta property="og:description" content="这只是个最基础的教程，参考了知乎上“洪卫”dl的文章——“Hexo+Github: 个人博客网站搭建完全教程(看这篇就够了)”。 其他各种自定义配置详见“大佬”的教程（｡ò ∀ ó｡）">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/hanabiicros/cdn/master/blog_files/img/PicGo-Github-PicBed/20200402172231.jpg">
+<meta property="og:image" content="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200402225722.jpg">
 <meta property="article:published_time" content="2020-03-22T14:08:31.000Z">
-<meta property="article:modified_time" content="2020-04-02T09:34:57.461Z">
+<meta property="article:modified_time" content="2020-04-03T13:02:57.497Z">
 <meta property="article:author" content="Yaobin Zhang">
 <meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="Blog">
 <meta property="article:tag" content="Github">
+<meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/hanabiicros/cdn/master/blog_files/img/PicGo-Github-PicBed/20200402172231.jpg">
+<meta name="twitter:image" content="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200402225722.jpg">
 
 
 
@@ -135,7 +135,7 @@
     
     <div class="card-image">
         <span  class="image is-7by1">
-            <img class="thumbnail" src="https://raw.githubusercontent.com/hanabiicros/cdn/master/blog_files/img/PicGo-Github-PicBed/20200402172231.jpg" alt="基于Hexo创建博客(基础篇)">
+            <img class="thumbnail" src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200402225722.jpg" alt="基于Hexo创建博客(基础篇)">
         </span>
     </div>
     
@@ -153,7 +153,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    11 分钟 读完 (大约 1659 个字)
+                    11 分钟 读完 (大约 1644 个字)
                 </span>
                 
                 
@@ -202,7 +202,7 @@
 -&apos;_config.yml&apos;:博客的配置文件，其中可以配置网站的各种属性，之后再说</code></pre><h3 id="预览默认博客页面"><a href="#预览默认博客页面" class="headerlink" title="预览默认博客页面"></a>预览默认博客页面</h3><p>　　输入’hexo g’生成静态页面，然后输入’hexo s’打开本地服务器</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p>　　服务器会开放4000端口，浏览器打开’localhost:4000/‘可以看到默认的博客页面。<br>　　emmmm，不得不说这个默认的页面感觉有点丑，不过不要紧，后续我会提供本网站所使用的主题icarus的教程。</p>
-<h2 id="Github上创建个人仓库"><a href="#Github上创建个人仓库" class="headerlink" title="Github上创建个人仓库"></a><strong>Github上创建个人仓库</strong></h2><p>在如图1位置’New repository’，新建个人仓库<br><img src="https://raw.githubusercontent.com/hanabiicros/cdn/master/blog_files/img/PicGo-Github-PicBed/20200401230223.png" alt="图1"><br>然后在’Repository name’字段处填自己的github账号名称+’github.io’，这样当部署到’yourname.github.io’网址时，才会识别到你的仓库，另外在初始化时附带上README。如图2所示<br><img src="https://raw.githubusercontent.com/hanabiicros/cdn/master/blog_files/img/PicGo-Github-PicBed/20200401230222.png" alt="图2"></p>
+<h2 id="Github上创建个人仓库"><a href="#Github上创建个人仓库" class="headerlink" title="Github上创建个人仓库"></a><strong>Github上创建个人仓库</strong></h2><p>在如图1位置’New repository’，新建个人仓库<br><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200403205753.png" alt="图1"><br>然后在’Repository name’字段处填自己的github账号名称+’github.io’，这样当部署到’yourname.github.io’网址时，才会识别到你的仓库，另外在初始化时附带上README。如图2所示<br><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200403205958.png" alt="图2"></p>
 <h2 id="生成SSH并添加到Github"><a href="#生成SSH并添加到Github" class="headerlink" title="生成SSH并添加到Github"></a><strong>生成SSH并添加到Github</strong></h2><p>　　在git控制台输入如下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"yourname"</span></span><br><span class="line">git config --global user.email <span class="string">"youremail"</span></span><br></pre></td></tr></table></figure>
 <p>　　全局设置到指定的Git仓库。网上给的设置邮箱的命令是：</p>
@@ -211,7 +211,7 @@
 <p>　　接着创建’SSH’，学过信息安全的应该都知道。说白了就是通过公私钥匹配，将你的文件上传到’GitHub’上。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"youremail"</span></span><br></pre></td></tr></table></figure>
 <p>　　然后一般在你的’C:\Users\xxx&#39;目录下，会生成’.ssh’文件夹，里面有你的私钥和公钥。可能我之前生成过ssh，已经有了该目录，就不演示了。</p>
-<p>　　接着将生成的公钥’id_rsa.pub’的内容复制到你的github上，如图3所示。<br><img src="https://raw.githubusercontent.com/hanabiicros/cdn/master/blog_files/img/PicGo-Github-PicBed/20200401230221.png" alt="图3"><br>　　即在setting中的’SSH and GPG keys’中’New SSH key’，给其取个名字，然后将复制的公钥粘贴到此处。<br>　　在git控制台输入</p>
+<p>　　接着将生成的公钥’id_rsa.pub’的内容复制到你的github上，如图3所示。<br><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200403210234.png" alt="图3"><br>　　即在setting中的’SSH and GPG keys’中’New SSH key’，给其取个名字，然后将复制的公钥粘贴到此处。<br>　　在git控制台输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 <p>　　若出现你的用户名，即配置成功</p>
 <h2 id="将hexo部署到GitHub上"><a href="#将hexo部署到GitHub上" class="headerlink" title="将hexo部署到GitHub上"></a><strong>将hexo部署到GitHub上</strong></h2><p>　　接着我们就可以将hexo生成的网页托管到GitHub上。</p>
@@ -330,7 +330,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            4
+                            5
                         </p>
                     </a>
                 </div>
@@ -354,7 +354,7 @@
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
-                            6
+                            9
                         </p>
                     </a>
                 </div>
