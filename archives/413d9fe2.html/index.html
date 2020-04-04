@@ -13,13 +13,13 @@
     <meta name="description" content="这是对基础篇的补充，方便了解Hexo，并对其进行个性化配置">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于Hexo创建博客(进阶篇)">
-<meta property="og:url" content="https://hanabiicros.github.io/archives/413d9fe2/index.html">
+<meta property="og:url" content="https://hanabiicros.github.io/archives/413d9fe2.html/">
 <meta property="og:site_name" content="icrosの小窝">
 <meta property="og:description" content="这是对基础篇的补充，方便了解Hexo，并对其进行个性化配置">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200402225721.jpg">
 <meta property="article:published_time" content="2020-03-26T14:08:31.000Z">
-<meta property="article:modified_time" content="2020-04-03T12:42:12.197Z">
+<meta property="article:modified_time" content="2020-04-04T12:49:32.731Z">
 <meta property="article:author" content="Yaobin Zhang">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Blog">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="icon" href="/images/favicon.png">
+<link rel="icon" href="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200404191717.png">
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
@@ -84,7 +84,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.jpg" alt="基于Hexo创建博客(进阶篇)" height="28">
+                <img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200404191741.jpg" alt="基于Hexo创建博客(进阶篇)" height="28">
             
             </a>
         </div>
@@ -152,7 +152,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    9 分钟 读完 (大约 1351 个字)
+                    12 分钟 读完 (大约 1827 个字)
                 </span>
                 
                 
@@ -230,8 +230,18 @@
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#123;%</span> <span class="string">codeblock</span> <span class="string">[title]</span> <span class="string">[lang:language]</span> <span class="string">[url]</span> <span class="string">[link</span> <span class="string">text]</span> <span class="string">[additional</span> <span class="string">options]</span> <span class="string">%&#125;</span></span><br><span class="line"><span class="string">code</span> <span class="string">snippet</span></span><br><span class="line"><span class="string">&#123;%</span> <span class="string">endcodeblock</span> <span class="string">%&#125;</span></span><br></pre></td></tr></table></figure>
 <p>　　还有一种就是用反引号的形式(格式问题，不能换行只能放在一行，实际使用将代码和第二个反引号换行)</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">``` [language] [title] [url] [link <span class="built_in">text</span>] code snippet```</span><br></pre></td></tr></table></figure>
+<br>
 
+<h2 id="Hexo插件"><a href="#Hexo插件" class="headerlink" title="Hexo插件"></a><strong>Hexo插件</strong></h2><h3 id="hexo-abbrlink"><a href="#hexo-abbrlink" class="headerlink" title="hexo-abbrlink"></a>hexo-abbrlink</h3><p>　　由于Hexo在生成博客文章链接时，默认是按照年/月/日/标题的格式，这样生成的链接太过冗长，虽然可以在_config.yml中修改”permalink”的格式，但是这样还是无法保证链接的唯一性，而且可能会造成链接的格式混乱。<br>　　而hexo-abbrlink插件可以生成唯一文章链接，而且配置十分简单。先安装该插件，在博客根目录，右键”Git Bush Here”，打开git控制台，然后输入如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+<p>　　接着在博客根目录下的_config.yml文件中，设置如下：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">archives/:abbrlink.html/</span>   <span class="comment">#archives的位置可以随意命名，或archives/:abbrlink/</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line">  <span class="attr">alg:</span> <span class="string">crc32</span>  <span class="comment">#support crc16(default) and crc32</span></span><br><span class="line">  <span class="attr">rep:</span> <span class="string">hex</span>    <span class="comment">#support dec(default) and hex</span></span><br></pre></td></tr></table></figure>
 
+<h3 id="hexo-generator-feed"><a href="#hexo-generator-feed" class="headerlink" title="hexo-generator-feed"></a>hexo-generator-feed</h3><p>　　首先，我们需要了解<strong>什么是RSS</strong>，RSS指Really Simple Syndication(真正简易联合)。RSS是我们有能力聚合网站的内容，它定义了非常简单的方法来共享和查看标题和内容。RSS文件可被自动更新，且允许为不同的网站进行视图的个性化。<br>　　之所以使用RSS，是为了让订阅RSS的用户不必每日来您的网站检查更新，他可以使用RSS聚合器来检查更新。<br>　　先安装hexo-generator-feed，git控制台输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+<p>　　然后在_config.yml文件中在<strong>Extension</strong>位置，添加如下内容：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">icarus</span></span><br><span class="line"><span class="comment">#RSS订阅</span></span><br><span class="line"><span class="attr">plugin:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo-generator-feed</span></span><br><span class="line"><span class="comment">#Feed Atom</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br></pre></td></tr></table></figure>
+<p>　　设置完毕后，你的RSS链接就是<strong>域名/atom.xml</strong>。一般RSS功能在页面上的标志是”wifi信号”</p>
 
         </div>
         
@@ -257,7 +267,7 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/archives/f0ff53b5/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/archives/f0ff53b5.html/">
                 <i class="level-item fas fa-chevron-left"></i>
                 <span class="level-item">前端面试题汇总——HTML篇</span>
             </a>
@@ -265,7 +275,7 @@
         
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/archives/5ec59427/">
+            <a class="level level-item has-link-grey  article-nav-next" href="/archives/5ec59427.html/">
                 <span class="level-item">基于Hexo创建博客(基础篇)</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
@@ -312,7 +322,7 @@
                 <div>
                     
                     <figure class="image is-128x128 has-mb-6">
-                        <img class="is-rounded" src="/images/profile.jpg" alt="icros">
+                        <img class="is-rounded" src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200404191756.jpg" alt="icros">
                     </figure>
                     
                     <p class="is-size-4 is-block">
@@ -481,7 +491,19 @@
         <a class="is-flex" href="#标签插件">
         <span class="has-mr-6">2.3.2</span>
         <span>标签插件</span>
-        </a></li></ul></li></ul></li></ul>
+        </a></li></ul></li></ul></li><li>
+        <a class="is-flex" href="#Hexo插件">
+        <span class="has-mr-6">3</span>
+        <span>Hexo插件</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#hexo-abbrlink">
+        <span class="has-mr-6">3.1</span>
+        <span>hexo-abbrlink</span>
+        </a></li><li>
+        <a class="is-flex" href="#hexo-generator-feed">
+        <span class="has-mr-6">3.2</span>
+        <span>hexo-generator-feed</span>
+        </a></li></ul></li></ul>
             </div>
         </div>
     </div>
@@ -504,7 +526,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.jpg" alt="基于Hexo创建博客(进阶篇)" height="28">
+                    <img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200404191741.jpg" alt="基于Hexo创建博客(进阶篇)" height="28">
                 
                 </a>
                 <p class="is-size-7">
