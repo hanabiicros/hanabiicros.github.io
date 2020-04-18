@@ -177,14 +177,14 @@
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　我在前几篇博客中提到过，如何在markdown文件中插入图片。要么是按照markdown自己的方式，使用<strong>![]()</strong>的方式，要么使用Hexo提供的<strong>标签插件</strong>。但是他们的本质都是根据图片的path，从本地中取出。这种获取图片的方式存在一个问题，即当我们更换工作环境之后，我们除了要将md文档复制过去，还要连同本地图片一起附带过去。<br>　　虽然我们可以将图片一起上传到Github上，但是这种方式无法做到对图片的统一管理。因此<strong>图床</strong>这个工具就派上大用场。<strong>图床</strong>，即<strong>自动把本地图片转换成链接</strong>的一款工具。<br>　　这次我们介绍一款非常优秀的图床工具——<strong>PicGo</strong>，它支持微博、七牛云、腾讯云COS、又拍云、GitHub、阿里云OSS、SM.MS、Imgur等8种常用图床，功能强大、界面美观、简单易用。(<del>不过有时会突然冒出一些无厘头的bug</del>)<br>　　我使用的是PicGo+GitHub，若使用其他图床工具可自行探索。</p>
 <p><strong>更新：用了一段时间，发现GitHub图床不太行|ω・），上传速度慢，而且经常失败。后来改用了Gitee，这篇文档就当了解吧，而且Gitee图床和GitHub图床配置差不多</strong></p>
 <h2 id="创建GitHub图床"><a href="#创建GitHub图床" class="headerlink" title="创建GitHub图床"></a>创建GitHub图床</h2><h3 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h3><h3 id="创建Repository"><a href="#创建Repository" class="headerlink" title="创建Repository"></a>创建Repository</h3><p>　　前两步比较简单，注意创建仓库时，用README初始化仓库</p>
-<h3 id="生成Token"><a href="#生成Token" class="headerlink" title="生成Token"></a>生成Token</h3><p>　　点击个人头像中的”Settings”，选中个人设置中的最下面一个按钮”Developer settings”<br><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200403195822.png" alt><br>　　然后点击”Personal access tokens”，选中”Generate new token”，生成新的令牌<br><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200403200339.png" alt><br>　　然后选择repo权限，名称随意即可<br><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200403200546.png" alt></p>
+<h3 id="生成Token"><a href="#生成Token" class="headerlink" title="生成Token"></a>生成Token</h3><p>　　点击个人头像中的”Settings”，选中个人设置中的最下面一个按钮”Developer settings”<br><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200403195822.png" alt=""><br>　　然后点击”Personal access tokens”，选中”Generate new token”，生成新的令牌<br><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200403200339.png" alt=""><br>　　然后选择repo权限，名称随意即可<br><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200403200546.png" alt=""></p>
 <p>(令牌生成后，<strong>只会出现一次</strong>，请将它复制下来并保存好)</p>
 <h2 id="配置PicGo"><a href="#配置PicGo" class="headerlink" title="配置PicGo"></a>配置PicGo</h2><h3 id="安装PicGo"><a href="#安装PicGo" class="headerlink" title="安装PicGo"></a>安装PicGo</h3><p>　　首先，你需要到GitHub上的<a href="https://github.com/Molunerfinn/PicGo/releases">PicGo项目</a>中下载可执行文件。若是mac系统，选择dmg后缀的文件，若是window，选择exe后缀的文件。</p>
-<p><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200402224805.png" alt></p>
+<p><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200402224805.png" alt=""></p>
 <p>　　GitHub上下载资源可能会遇到网页无法访问或下载速度过慢的问题，这时候我只能说一句：“<strong>迅雷</strong>是个好东西”(ಡωಡ) 安装了迅雷的同学，直接右键使用迅雷下载即可，速度非常快。</p>
-<h3 id="PicGo上配置GitHub图床"><a href="#PicGo上配置GitHub图床" class="headerlink" title="PicGo上配置GitHub图床"></a>PicGo上配置GitHub图床</h3><p><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200403201635.png" alt></p>
+<h3 id="PicGo上配置GitHub图床"><a href="#PicGo上配置GitHub图床" class="headerlink" title="PicGo上配置GitHub图床"></a>PicGo上配置GitHub图床</h3><p><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200403201635.png" alt=""></p>
 <p>　　仓库名：按照”用户名/仓库名”的格式，比如我的用户名为”hanabiicros”，仓库名为”cdn”<br>　　分支名：填”master”即可<br>　　Token：中将刚刚创建的令牌粘贴在这里即可<br>　　存储路径：随意<br>　　自定义域名：按照”https://raw.githubusercontent.com/用户名/仓库名/master”的格式填写，记住一定要加master，不加master会导致生成的图片链接无法访问到</p>
-<h3 id="PicGo设置"><a href="#PicGo设置" class="headerlink" title="PicGo设置"></a>PicGo设置</h3><p><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200403202652.png" alt></p>
+<h3 id="PicGo设置"><a href="#PicGo设置" class="headerlink" title="PicGo设置"></a>PicGo设置</h3><p><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200403202652.png" alt=""></p>
 <p>　　在设置中，可以点开日志文件，用来查看报错信息；可以修改快捷键等。建议开启<strong>时间戳重命名</strong>，这样可以防止上传两张同名图片而导致上传失败。</p>
 
         </div>
@@ -209,6 +209,13 @@
 
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/archives/aaea6312.html/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">前端面试汇总——js</span>
+            </a>
+        </div>
         
         
         <div class="level-end">
@@ -288,7 +295,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            5
+                            6
                         </p>
                     </a>
                 </div>
