@@ -19,7 +19,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200402225730.jpg">
 <meta property="article:published_time" content="2020-04-17T12:43:15.000Z">
-<meta property="article:modified_time" content="2020-06-15T03:48:45.800Z">
+<meta property="article:modified_time" content="2020-06-15T14:36:22.121Z">
 <meta property="article:author" content="Yaobin Zhang">
 <meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
@@ -147,7 +147,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    33 分钟 读完 (大约 4979 个字)
+                    33 分钟 读完 (大约 4942 个字)
                 </span>
                 
                 
@@ -232,12 +232,35 @@
 <br/>
 
 <h2 id="javascript继承的方式和优缺点"><a href="#javascript继承的方式和优缺点" class="headerlink" title="javascript继承的方式和优缺点"></a><strong>javascript继承的方式和优缺点</strong></h2><ol>
-<li>原型链继承<br>缺点：<br>　　1. 引用类型的属性被所有实例共享<br>　　2. 在创建 Child 的实例时，不能向 Parent 传参</li>
-<li>借用构造函数(经典继承)<br>优点：<br>　　1. 避免了引用类型的属性被所有实例共享<br>　　2. 可以在 Child 中向 Parent 传参<br>缺点：<br>　　1. 方法都在构造函数中定义，每次创建实例都会创建一遍方法。</li>
-<li>组合继承<br>优点：<br>　　1.融合原型链继承和构造函数的优点，是 JavaScript 中最常用的继承模式。</li>
-<li>原型式继承<br>缺点：<br>　　1. 包含引用类型的属性值始终都会共享相应的值，这点跟原型链继承一样。</li>
-<li>寄生式继承<br>缺点：<br>　　1.跟借用构造函数模式一样，每次创建对象都会创建一遍方法。</li>
-<li>寄生组合式继承<br>优点：<br>　　1.这种方式的高效率体现它只调用了一次 Parent 构造函数，并且因此避免了在 Parent.prototype 上面创建不必要的、多余的属性。<br>　　2.与此同时，原型链还能保持不变；<br>　　3.因此，还能够正常使用 instanceof 和 isPrototypeOf。</li>
+<li>原型链继承<br>缺点：<ul>
+<li>引用类型的属性被所有实例共享</li>
+<li>在创建 Child 的实例时，不能向 Parent 传参</li>
+</ul>
+</li>
+<li>借用构造函数(经典继承)<br>优点：<ul>
+<li>避免了引用类型的属性被所有实例共享</li>
+<li>可以在 Child 中向 Parent 传参<br>缺点：</li>
+<li>方法都在构造函数中定义，每次创建实例都会创建一遍方法。</li>
+</ul>
+</li>
+<li>组合继承<br>优点：<ul>
+<li>融合原型链继承和构造函数的优点，是 JavaScript 中最常用的继承模式。</li>
+</ul>
+</li>
+<li>原型式继承<br>缺点：<ul>
+<li>包含引用类型的属性值始终都会共享相应的值，这点跟原型链继承一样。</li>
+</ul>
+</li>
+<li>寄生式继承<br>缺点：<ul>
+<li>跟借用构造函数模式一样，每次创建对象都会创建一遍方法。</li>
+</ul>
+</li>
+<li>寄生组合式继承<br>优点：<ul>
+<li>这种方式的高效率体现它只调用了一次 Parent 构造函数，并且因此避免了在 Parent.prototype 上面创建不必要的、多余的属性。</li>
+<li>与此同时，原型链还能保持不变；</li>
+<li>因此，还能够正常使用 instanceof 和 isPrototypeOf。</li>
+</ul>
+</li>
 </ol>
 <p><strong>开发人员普遍认为寄生组合式继承是引用类型最理想的继承范式</strong><br><br/></p>
 <h2 id="什么是原型链"><a href="#什么是原型链" class="headerlink" title="什么是原型链"></a><strong>什么是原型链</strong></h2><p>　　通过一个对象的<strong>proto</strong>可以找到它的原型对象，原型对象也是一个对象，就可以通过原型对象的<strong>proto</strong>，最后找到了我们的 Object.prototype,从实例的原型对象开始一直到 Object.prototype 就是我们的原型链<br>eg:<br><img src="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200428221052.png" alt=""></p>
@@ -252,7 +275,7 @@
 </li>
 </ol>
 <h2 id="javascript-的-typeof-返回哪些数据类型"><a href="#javascript-的-typeof-返回哪些数据类型" class="headerlink" title="javascript 的 typeof 返回哪些数据类型"></a><strong>javascript 的 typeof 返回哪些数据类型</strong></h2><p>　　7 种分别为 string、boolean、number、Object、Function、undefined、symbol(ES6)<br><br/></p>
-<h2 id="在-css-js-代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理？"><a href="#在-css-js-代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理？" class="headerlink" title="** 在 css/js 代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理？**"></a>** 在 css/js 代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理？**</h2><p>　　dns 缓存，cdn 缓存，浏览器缓存，服务器缓存。<br><br/></p>
+<h2 id="在css-js-代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理"><a href="#在css-js-代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理" class="headerlink" title="在css/js 代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理?"></a><strong>在css/js 代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理?</strong></h2><p>　　dns 缓存，cdn 缓存，浏览器缓存，服务器缓存。<br><br/></p>
 <h2 id="列举-3-种强制类型转换和-2-种隐式类型转换"><a href="#列举-3-种强制类型转换和-2-种隐式类型转换" class="headerlink" title="列举 3 种强制类型转换和 2 种隐式类型转换"></a><strong>列举 3 种强制类型转换和 2 种隐式类型转换</strong></h2><p>　　强制（parseInt,parseFloat,Number）、隐式（+ -）<br><br/></p>
 <h2 id="你对闭包的理解？优缺点？"><a href="#你对闭包的理解？优缺点？" class="headerlink" title="你对闭包的理解？优缺点？"></a><strong>你对闭包的理解？优缺点？</strong></h2><p>概念：闭包就是能够读取其他函数内部变量的函数。<br>三大特性：<br>　　1. 函数嵌套函数。<br>　　2. 函数内部可以引用外部的参数和变量。<br>　　3. 参数和变量不会被垃圾回收机制回收。<br>优点：<br>　　1. 希望一个变量长期存储在内存中。<br>　　2. 避免全局变量的污染。<br>　　3. 私有成员的存在。<br>缺点：<br>　　1. 常驻内存，增加内存使用量。<br>　　2. 使用不当会很容易造成内存泄露。<br>eg:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">outer</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> name = <span class="string">"jack"</span>;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">inner</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(name);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> inner;</span><br><span class="line">&#125;</span><br><span class="line">outer()(); <span class="comment">// jack</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`Hi! <span class="subst">$&#123;name&#125;</span>`</span>);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> test = sayHi(<span class="string">"xiaoming"</span>);</span><br><span class="line">test(); <span class="comment">// Hi! xiaoming</span></span><br></pre></td></tr></table></figure>
@@ -261,12 +284,26 @@
 <h2 id="new-一个对象的过程中发生了什么"><a href="#new-一个对象的过程中发生了什么" class="headerlink" title="new 一个对象的过程中发生了什么"></a><strong>new 一个对象的过程中发生了什么</strong></h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 创建空对象；</span></span><br><span class="line"><span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line"><span class="comment">// 2. 设置新对象的 constructor 属性为构造函数的名称，设置新对象的__proto__属性指向构造函数的 prototype 对象；</span></span><br><span class="line">obj.__proto__ = ClassA.prototype;</span><br><span class="line"><span class="comment">// 3. 使用新对象调用函数，函数中的 this 被指向新实例对象：</span></span><br><span class="line">ClassA.call(obj); <span class="comment">//&#123;&#125;.构造函数();</span></span><br><span class="line"><span class="comment">// 4. 如果无返回值或者返回一个非对象值，则将新对象返回；如果返回值是一个新对象的话那么直接返回该对象。</span></span><br></pre></td></tr></table></figure>
 <br/>
 
-<h2 id="for-in-和-for-of"><a href="#for-in-和-for-of" class="headerlink" title="for in 和 for of"></a><strong>for in 和 for of</strong></h2><p><strong>1. for in</strong><br>　　+ 一般用于遍历对象的可枚举属性。以及对象从构造函数原型中继承的属性。对于每个不同的属性，语句都会被执行<br>　　+ 不建议使用 for in 遍历数组，因为输出的顺序是不固定的<br>　　+ 如果迭代的对象的变量值是 null 或者 undefined, for in 不执行循环体，建议在使用 for in 循环之前，先检查该对象的值是不是 null 或者 undefined</p>
-<p><strong>2. for of</strong><br>　　+ for…of 语句在可迭代对象（包括 Array，Map，Set，String，TypedArray，arguments 对象等等）上创建一个迭代循环，调用自定义迭代钩子，并为每个不同属性的值执行语句</p>
+<h2 id="for-in-和-for-of"><a href="#for-in-和-for-of" class="headerlink" title="for in 和 for of"></a><strong>for in 和 for of</strong></h2><p><strong>1. for in</strong></p>
+<ul>
+<li>一般用于遍历对象的可枚举属性。以及对象从构造函数原型中继承的属性。对于每个不同的属性，语句都会被执行</li>
+<li>不建议使用 for in 遍历数组，因为输出的顺序是不固定的</li>
+<li>如果迭代的对象的变量值是 null 或者 undefined, for in 不执行循环体，建议在使用 for in 循环之前，先检查该对象的值是不是 null 或者 undefined</li>
+</ul>
+<p><strong>2. for of</strong></p>
+<ul>
+<li>for…of 语句在可迭代对象（包括 Array，Map，Set，String，TypedArray，arguments 对象等等）上创建一个迭代循环，调用自定义迭代钩子，并为每个不同属性的值执行语句</li>
+</ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s = &#123;</span><br><span class="line">  a: <span class="number">1</span>,</span><br><span class="line">  b: <span class="number">2</span>,</span><br><span class="line">  c: <span class="number">3</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> s1 = <span class="built_in">Object</span>.create(s);<span class="comment">// 该方法创建一个新对象，使用现有的对象来提供新创建的对象的_proto_；</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> prop <span class="keyword">in</span> s1) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(prop); <span class="comment">//a b c</span></span><br><span class="line">  <span class="built_in">console</span>.log(s1[prop]); <span class="comment">//1 2 3</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> prop <span class="keyword">of</span> s1) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(prop); <span class="comment">//报错如下 Uncaught TypeError: s1 is not iterable</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> prop <span class="keyword">of</span> <span class="built_in">Object</span>.keys(s1)) &#123;  <span class="comment">//object.keys返回一个表示给定对象的所有可枚举属性的字符串数组</span></span><br><span class="line">  <span class="built_in">console</span>.log(prop); <span class="comment">// a b c</span></span><br><span class="line">  <span class="built_in">console</span>.log(s1[prop]); <span class="comment">//1 2 3</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <br/>
 
-<h2 id="如何判断-JS-变量的一个类型（至少三种方式）"><a href="#如何判断-JS-变量的一个类型（至少三种方式）" class="headerlink" title="如何判断 JS 变量的一个类型（至少三种方式）"></a><strong>如何判断 JS 变量的一个类型（至少三种方式）</strong></h2><p>　　+ typeof(判断引用类型时不准确，返回值只有object/function)<br>　　+ instanceof(判断一个实例是否属于某种类型)<br>　　+ constructor(<strong>对象才拥有的</strong>，从一个对象指向一个函数，含义是指向该对象的构造函数。所有函数和对象最终都是由Function构造函数得来，所以constructor属性的终点就是Function这个函数)<br>　　+ prototype(<strong>函数所独有的</strong>，含义是<strong>函数的原型对象</strong>，也就是这个函数所创建的实例的原型对象，作用是<strong>包含可以由特定类型的所有实例共享的属性和方法</strong>)<br><br/></p>
+<h2 id="如何判断-JS-变量的一个类型（至少三种方式）"><a href="#如何判断-JS-变量的一个类型（至少三种方式）" class="headerlink" title="如何判断 JS 变量的一个类型（至少三种方式）"></a><strong>如何判断 JS 变量的一个类型（至少三种方式）</strong></h2><ul>
+<li>typeof(判断引用类型时不准确，返回值只有object/function)</li>
+<li>instanceof(判断一个实例是否属于某种类型)</li>
+<li>constructor(<strong>对象才拥有的</strong>，从一个对象指向一个函数，含义是指向该对象的构造函数。所有函数和对象最终都是由Function构造函数得来，所以constructor属性的终点就是Function这个函数)<br>　　+ prototype(<strong>函数所独有的</strong>，含义是<strong>函数的原型对象</strong>，也就是这个函数所创建的实例的原型对象，作用是<strong>包含可以由特定类型的所有实例共享的属性和方法</strong>)<br/>
+
+</li>
+</ul>
 <h2 id="for-in、Object-keys-和-Object-getOwnPropertyNames-对属性遍历有什么区别"><a href="#for-in、Object-keys-和-Object-getOwnPropertyNames-对属性遍历有什么区别" class="headerlink" title="for in、Object.keys 和 Object.getOwnPropertyNames 对属性遍历有什么区别?"></a><strong>for in、Object.keys 和 Object.getOwnPropertyNames 对属性遍历有什么区别?</strong></h2><p>　　1. for in 会遍历自身及原型链上的可枚举属性<br>　　2. Object.keys 会将对象自身的可枚举属性的 key 输出<br>　　3. Object.getOwnPropertyNames 会将自身所有的属性的 key 输出<br>eg:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> parent = <span class="built_in">Object</span>.create(<span class="built_in">Object</span>.prototype, &#123;</span><br><span class="line">  a: &#123;</span><br><span class="line">    value: <span class="number">123</span>,</span><br><span class="line">    writable: <span class="literal">true</span>,</span><br><span class="line">    enumerable: <span class="literal">true</span>,</span><br><span class="line">    configurable: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// parent继承自Object.prototype，有一个可枚举的属性a（enumerable:true）。</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> child = <span class="built_in">Object</span>.create(parent, &#123;</span><br><span class="line">  b: &#123;</span><br><span class="line">    value: <span class="number">2</span>,</span><br><span class="line">    writable: <span class="literal">true</span>,</span><br><span class="line">    enumerable: <span class="literal">true</span>,</span><br><span class="line">    configurable: <span class="literal">true</span></span><br><span class="line">  &#125;,</span><br><span class="line">  c: &#123;</span><br><span class="line">    value: <span class="number">3</span>,</span><br><span class="line">    writable: <span class="literal">true</span>,</span><br><span class="line">    enumerable: <span class="literal">false</span>,</span><br><span class="line">    configurable: <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//child 继承自 parent ，b可枚举，c不可枚举</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//for in</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> key <span class="keyword">in</span> child) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(key);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// b</span></span><br><span class="line"><span class="comment">// a</span></span><br><span class="line"><span class="comment">// for in 会遍历自身及原型链上的可枚举属性</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Object.keys</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.keys(child));</span><br><span class="line"><span class="comment">// ["b"]</span></span><br><span class="line"><span class="comment">// Object.keys 会将对象自身的可枚举属性的key输出</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Object.getOwnPropertyNames</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.getOwnPropertyNames(child));</span><br><span class="line"><span class="comment">// ["b","c"]</span></span><br><span class="line"><span class="comment">// 会将自身所有的属性的key输出</span></span><br></pre></td></tr></table></figure>
 <br/>
@@ -280,8 +317,10 @@
 <li>子页面调用主页面的fullscreen方法<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.parent.fullScreens();</span><br></pre></td></tr></table></figure></li>
 <li>js 在 iframe 子页面获取父页面元素<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.parent.document.getElementById(<span class="string">"元素id"</span>);</span><br></pre></td></tr></table></figure></li>
 <li>js 在父页面获取 iframe 子页面元素代码如下<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.frames[<span class="string">"iframe_ID"</span>].document.getElementById(<span class="string">"元素id"</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="跨域通信"><a href="#跨域通信" class="headerlink" title="跨域通信"></a>跨域通信</h3>使用<strong>postMessage</strong></li>
+
+</li>
 </ol>
+<h3 id="跨域通信"><a href="#跨域通信" class="headerlink" title="跨域通信"></a>跨域通信</h3><p>使用<strong>postMessage</strong></p>
 <p>子页面</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.parent.postMessage(<span class="string">"hello"</span>, <span class="string">"http://127.0.0.1:8089"</span>);</span><br></pre></td></tr></table></figure>
 
@@ -525,9 +564,9 @@
         <span class="has-mr-6">14</span>
         <span>javascript 的 typeof 返回哪些数据类型</span>
         </a></li><li>
-        <a class="is-flex" href="#在-css-js-代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理？">
+        <a class="is-flex" href="#在css-js-代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次-js-请求一般情况下有哪些地方会有缓存处理">
         <span class="has-mr-6">15</span>
-        <span>** 在 css/js 代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理？**</span>
+        <span>在css/js 代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次 js 请求一般情况下有哪些地方会有缓存处理?</span>
         </a></li><li>
         <a class="is-flex" href="#列举-3-种强制类型转换和-2-种隐式类型转换">
         <span class="has-mr-6">16</span>
