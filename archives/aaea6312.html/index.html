@@ -19,7 +19,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/zhangyaobin123/cdn/raw/master/img/20200402225730.jpg">
 <meta property="article:published_time" content="2020-04-17T12:43:15.000Z">
-<meta property="article:modified_time" content="2020-06-20T11:44:50.039Z">
+<meta property="article:modified_time" content="2021-02-24T07:17:27.487Z">
 <meta property="article:author" content="Yaobin Zhang">
 <meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
@@ -147,7 +147,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 小时 读完 (大约 9902 个字)
+                    1 小时 读完 (大约 9917 个字)
                 </span>
                 
                 
@@ -336,9 +336,7 @@
 
 </li>
 </ol>
-<h2 id="标签的-defer-和-asnyc-属性的作用以及二者的区别"><a href="#标签的-defer-和-asnyc-属性的作用以及二者的区别" class="headerlink" title=" 标签的 defer 和 asnyc 属性的作用以及二者的区别?"></a><strong><script> 标签的 defer 和 asnyc 属性的作用以及二者的区别?</strong></h2><pre><code>1. defer 和 async 的网络加载过程是一致的，都是**异步**执行。
-2. 区别在于加载完成之后什么时候执行，可以看出 defer 是文档所有元素解析完成之后才执行的。
-3. 如果存在多个 defer 脚本，那么它们是按照顺序执行脚本的，而 async，无论声明顺序如何，只要加载完成就立刻执行</code></pre><p>无论<script>标签是嵌入代码还是引用外部文件，只要不包含 defer 属性和 async 属性（这两个属性只对外部文件有效），浏览器会按照<script>的出现顺序对他们依次进行解析，也就是说，只有在第一个<script>中的代码执行完成之后，浏览器才会执行第二个<script>中的代码，并且在解析时，页面的处理会暂时停止。<br><br/></p>
+<h2 id="lt-script-gt-标签的-defer-和-asnyc-属性的作用以及二者的区别"><a href="#lt-script-gt-标签的-defer-和-asnyc-属性的作用以及二者的区别" class="headerlink" title="&lt;script&gt; 标签的 defer 和 asnyc 属性的作用以及二者的区别?"></a><strong>&lt;script&gt; 标签的 defer 和 asnyc 属性的作用以及二者的区别?</strong></h2><p>　　1. defer 和 async 的网络加载过程是一致的，都是异步执行。<br>　　2. 区别在于加载完成之后什么时候执行，可以看出 defer 是文档所有元素解析完成之后才执行的。<br>　　3. 如果存在多个 defer 脚本，那么它们是按照顺序执行脚本的，而 async，无论声明顺序如何，只要加载完成就立刻执行<br>无论&lt;script&gt;标签是嵌入代码还是引用外部文件，只要不包含 defer 属性和 async 属性（这两个属性只对外部文件有效），浏览器会按照script的出现顺序对他们依次进行解析，也就是说，只有在第一个script中的代码执行完成之后，浏览器才会执行第二个script中的代码，并且在解析时，页面的处理会暂时停止。<br><br/></p>
 <h2 id="你对松散类型的理解"><a href="#你对松散类型的理解" class="headerlink" title="你对松散类型的理解"></a><strong>你对松散类型的理解</strong></h2><p>　　JavaScript 中的变量为松散类型，所谓松散类型就是指当一个变量被申明出来就可以保存任意类型的值，就是不像 SQL 一样申明某个键值为 int 就只能保存整型数值，申明 varchar 只能保存字符串。一个变量所保存值的类型也可以改变，这在 JavaScript 中是完全有效的，只是不推荐。相比较于将变量理解为“盒子“，《JavaScript 编程精解》中提到应该将变量理解为“触手”，它不保存值，而是抓取值。这一点在当变量保存引用类型值时更加明显。<br><br/></p>
 <h2 id="移动端-click-事件、touch-事件、tap-事件的区别"><a href="#移动端-click-事件、touch-事件、tap-事件的区别" class="headerlink" title="移动端 click 事件、touch 事件、tap 事件的区别"></a><strong>移动端 click 事件、touch 事件、tap 事件的区别</strong></h2><p>　　1. click 事件在移动端会有 200-300ms 的延迟，主要原因是苹果手机在设计时，考虑到用户在浏览网页时需要放大，所以，在用户点击的 200-300ms 之后，才触发 click，如果 200-300ms 之内还有 click，就会进行放大缩小。<br>　　2. touch 事件是针对触屏手机上的触摸事件。现今大多数触屏手机 webkit 内核提供了 touch 事件的监听，让开发者可以获取用户触摸屏幕时的一些信息。其中包括：touchstart,touchmove,touchend,touchcancel 这四个事件，touchstart touchmove touchend 事件可以类比于 mousedown mouseover mouseup 的触发<br>　　3. tap 事件在移动端，代替 click 作为点击事件，tap 事件被很多框架（如 zepto）封装，来减少延迟问题， tap 事件不是原生的，是封装的<br>具体实现：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">tap</span>(<span class="params">ele, callback</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 记录开始时间</span></span><br><span class="line">    <span class="keyword">var</span> startTime = <span class="number">0</span>,</span><br><span class="line">    <span class="comment">// 控制允许延迟的时间</span></span><br><span class="line">        delayTime = <span class="number">200</span>,</span><br><span class="line">    <span class="comment">// 记录是否移动，如果移动，则不触发tap事件</span></span><br><span class="line">        isMove = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 在touchstart时记录开始的时间</span></span><br><span class="line">    ele.addEventListener(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">      startTime = <span class="built_in">Date</span>.now();</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 如果touchmove事件被触发，则isMove为true</span></span><br><span class="line">    ele.addEventListener(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">      isMove = <span class="literal">true</span>;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 如果touchmove事件触发或者中间时间超过了延迟时间，则返回，否则，调用回调函数。</span></span><br><span class="line">    ele.addEventListener(<span class="string">'touchend'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">if</span> (isMove || (<span class="built_in">Date</span>.now() - startTime &gt; delayTime)) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        callback(e);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">'btn'</span>);</span><br><span class="line">  tap(btn, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">'taped'</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
@@ -370,7 +368,7 @@
 
 </li>
 </ol>
-<h2 id="null-undefined的区别"><a href="#null-undefined的区别" class="headerlink" title="null/undefined的区别"></a><strong>null/undefined的区别</strong></h2><p>　　null: Null 类型，代表“空值"，代表一个空对象指针，使用 typeof 运算得到 “object"，所以你可以认为它是一个特殊的对象值。<br>　　undefined： Undefined 类型，当一个声明了一个变量未初始化时，得到的就是 undefined<br><br/></p>
+<h2 id="null-undefined的区别"><a href="#null-undefined的区别" class="headerlink" title="null/undefined的区别"></a><strong>null/undefined的区别</strong></h2><p>　　null: Null 类型，代表“空值”，代表一个空对象指针，使用 typeof 运算得到 “object”，所以你可以认为它是一个特殊的对象值。<br>　　undefined： Undefined 类型，当一个声明了一个变量未初始化时，得到的就是 undefined<br><br/></p>
 <h2 id="重排与重绘的区别，什么情况下会触发？"><a href="#重排与重绘的区别，什么情况下会触发？" class="headerlink" title="重排与重绘的区别，什么情况下会触发？"></a><strong>重排与重绘的区别，什么情况下会触发？</strong></h2><ol>
 <li>重排<br>　　浏览器下载完页面中的所有组件（HTML、JavaScript、CSS、图片）之后会解析生成两个内部数据结构（DOM 树和渲染树），DOM 树表示页面结构，渲染树表示 DOM 节点如何显示。重排是 DOM 元素的几何属性变化，DOM 树的结构变化，渲染树需要重新计算。</li>
 <li>重绘<br>　　重绘是一个元素外观的改变所触发的浏览器行为，例如改变 visibility、outline、背景色等属性。浏览器会根据元素的新属性重新绘制，使元素呈现新的外观。由于浏览器的流布局，对渲染树的计算通常只需要遍历一次就可以完成。但 table 及其内部元素除外，它可能需要多次计算才能确定好其在渲染树中节点的属性值，比同等元素要多花两倍时间，这就是我们尽量避免使用 table 布局页面的原因之一。</li>
@@ -752,9 +750,85 @@
         <span class="has-mr-6">24</span>
         <span>如何判断一个对象是否为数组</span>
         </a></li><li>
-        <a class="is-flex" href="#标签的-defer-和-asnyc-属性的作用以及二者的区别">
+        <a class="is-flex" href="#lt-script-gt-标签的-defer-和-asnyc-属性的作用以及二者的区别">
         <span class="has-mr-6">25</span>
-        <span></span>
+        <span><script> 标签的 defer 和 asnyc 属性的作用以及二者的区别?</span>
+        </a></li><li>
+        <a class="is-flex" href="#你对松散类型的理解">
+        <span class="has-mr-6">26</span>
+        <span>你对松散类型的理解</span>
+        </a></li><li>
+        <a class="is-flex" href="#移动端-click-事件、touch-事件、tap-事件的区别">
+        <span class="has-mr-6">27</span>
+        <span>移动端 click 事件、touch 事件、tap 事件的区别</span>
+        </a></li><li>
+        <a class="is-flex" href="#JS-单线程还是多线程，如何显示异步操作">
+        <span class="has-mr-6">28</span>
+        <span>JS 单线程还是多线程，如何显示异步操作</span>
+        </a></li><li>
+        <a class="is-flex" href="#JavaScript-数组的函数-map-forEach-reduce-filter">
+        <span class="has-mr-6">29</span>
+        <span>JavaScript 数组的函数 map/forEach/reduce/filter</span>
+        </a></li><li>
+        <a class="is-flex" href="#JS-块级作用域、变量提升">
+        <span class="has-mr-6">30</span>
+        <span>JS 块级作用域、变量提升</span>
+        </a></li><li>
+        <a class="is-flex" href="#var、let、const-的区别">
+        <span class="has-mr-6">31</span>
+        <span>var、let、const 的区别</span>
+        </a></li><li>
+        <a class="is-flex" href="#null-undefined的区别">
+        <span class="has-mr-6">32</span>
+        <span>null/undefined的区别</span>
+        </a></li><li>
+        <a class="is-flex" href="#重排与重绘的区别，什么情况下会触发？">
+        <span class="has-mr-6">33</span>
+        <span>重排与重绘的区别，什么情况下会触发？</span>
+        </a></li><li>
+        <a class="is-flex" href="#jsonp-优缺点">
+        <span class="has-mr-6">34</span>
+        <span>jsonp 优缺点</span>
+        </a></li><li>
+        <a class="is-flex" href="#兼容各种浏览器版本的事件绑定">
+        <span class="has-mr-6">35</span>
+        <span>兼容各种浏览器版本的事件绑定</span>
+        </a></li><li>
+        <a class="is-flex" href="#split-和join-的区别">
+        <span class="has-mr-6">36</span>
+        <span>split()和join()的区别</span>
+        </a></li><li>
+        <a class="is-flex" href="#new-操作符具体干了什么呢">
+        <span class="has-mr-6">37</span>
+        <span>new 操作符具体干了什么呢?</span>
+        </a></li><li>
+        <a class="is-flex" href="#call-和-apply-的含义和区别">
+        <span class="has-mr-6">38</span>
+        <span>call() 和 apply() 的含义和区别</span>
+        </a></li><li>
+        <a class="is-flex" href="#sort排序原理">
+        <span class="has-mr-6">39</span>
+        <span>sort排序原理</span>
+        </a></li><li>
+        <a class="is-flex" href="#Zepto-的点透问题如何解决？">
+        <span class="has-mr-6">40</span>
+        <span>Zepto 的点透问题如何解决？</span>
+        </a></li><li>
+        <a class="is-flex" href="#如何判断当前脚本运行在浏览器还是-node-环境中？">
+        <span class="has-mr-6">41</span>
+        <span>如何判断当前脚本运行在浏览器还是 node 环境中？</span>
+        </a></li><li>
+        <a class="is-flex" href="#移动端的点击事件的有延迟，时间是多久，为什么会有？-怎么解决这个延时？">
+        <span class="has-mr-6">42</span>
+        <span>移动端的点击事件的有延迟，时间是多久，为什么会有？ 怎么解决这个延时？</span>
+        </a></li><li>
+        <a class="is-flex" href="#Node-js-的适用场景？">
+        <span class="has-mr-6">43</span>
+        <span>Node.js 的适用场景？</span>
+        </a></li><li>
+        <a class="is-flex" href="#如何实现文件断点续传">
+        <span class="has-mr-6">44</span>
+        <span>如何实现文件断点续传</span>
         </a></li></ul>
             </div>
         </div>
@@ -782,7 +856,7 @@
                 
                 </a>
                 <p class="is-size-7">
-                &copy; 2020 Yaobin Zhang&nbsp;
+                &copy; 2021 Yaobin Zhang&nbsp;
                 Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
                         href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
                 
