@@ -16,6 +16,10 @@ function writing(index) {
 }
 writing(index)
 
+document.addEventListener('WeixinJSBridgeReady', function() {
+    document.getElementById('dd').play()
+})
+
 const IS_MOBILE = window.innerWidth <= 640;
 const IS_DESKTOP = window.innerWidth > 800;
 const IS_HEADER = IS_DESKTOP && window.innerHeight < 300;
