@@ -234,7 +234,7 @@ if (!IS_HEADER) {
 	store.load();
 }
 
-// Actions
+// Actionsv
 // ---------
 
 function togglePause(toggle) {
