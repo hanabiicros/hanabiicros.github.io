@@ -16,7 +16,7 @@ function writing(index) {
 }
 writing(index)
 
-document.addEventListener('WeixinJSBridgeReady', function() {
+document.addEventListener('touchstart', function() {
     document.getElementById('dd').play()
 })
 
