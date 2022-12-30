@@ -16,7 +16,7 @@ function writing(index) {
 }
 writing(index)
 
-document.addEventListener('touchstart', function() {
+document.addEventListener('click', function() {
     document.getElementById('dd').play()
 })
 
